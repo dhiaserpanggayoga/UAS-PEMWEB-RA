@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "name": "Sop Buntut",
+    "description": "Sop daging buntut sapi yang dimasak dengan rempah-rempah.",
+    "imageUrl": "https://example.com/sop-buntut.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Tumis Kangkung",
+    "description": "Sayur kangkung yang ditumis dengan bawang putih dan cabai.",
+    "imageUrl": "https://example.com/tumis-kangkung.jpg"
+  }
+]

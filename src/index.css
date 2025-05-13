@@ -1,0 +1,45 @@
+/* src/index.css */
+
+/* Mengimpor animate.css untuk animasi */
+@import 'animate.css';
+
+/* Pengaturan global tambahan untuk body */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Pengaturan untuk elemen kode */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Pengaturan untuk elemen <a> (hyperlink) */
+a {
+  text-decoration: none;  /* Menghilangkan garis bawah */
+  color: inherit;         /* Warna mengikuti teks parent */
+}
+
+/* Pengaturan tambahan untuk elemen h1, h2, h3, dll */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: bold;
+}
+
+/* Pengaturan untuk tampilan container aplikasi */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Menambahkan margin dan padding pada elemen tertentu (opsional) */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}

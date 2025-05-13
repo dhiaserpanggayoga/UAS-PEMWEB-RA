@@ -1,0 +1,124 @@
+/* src/App.css */
+
+/* Global Reset dan Pengaturan */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #e4e2dc; /* Warna latar belakang lembut */
+  color: #ede4e4; /* Warna teks utama */
+  line-height: 1.6;
+}
+
+/* Pengaturan untuk Halaman Utama */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #f7f1ef, #3ed714); /* Gradien elegan dari ungu ke biru */
+}
+
+/* Header */
+.app-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.app-header h1 {
+  font-size: 4rem;
+  color: rgb(113, 58, 5);
+  text-shadow: 10px 7px 6px rgba(150, 24, 24, 0.3);
+  font-weight: bold;
+  margin-bottom: px;
+}
+
+.app-header p {
+  font-size: 2rem;
+  color: rgb(127, 71, 14);
+  font-weight: bold;
+   margin-bottom: 2px;
+}
+
+/* Grid Layout untuk Konten */
+.app-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid responsif */
+  gap: 24px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin-top: 40px;
+}
+
+/* Kartu Kategori */
+.card {
+  background-color: rgb(251, 221, 91);
+  border-radius: 12px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Efek hover kartu */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.card button {
+  background-color: #3eda49;
+  color: rgba(111, 9, 220, 0.236);
+  padding: 20px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  
+}
+
+.card button:hover {
+  background-color: #33ba33;
+}
+
+/* Responsivitas untuk berbagai ukuran layar */
+@media (max-width: 768px) {
+  .app-header h1 {
+    font-size: 3rem;
+  }
+
+  .app-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .app-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
