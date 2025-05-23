@@ -1,0 +1,3 @@
+[run]
+source = resep_dapur
+omit = resep_dapur/test*
